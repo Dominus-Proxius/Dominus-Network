@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dominum - Settings</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="apps.html">Apps</a></li>
+                <li><a href="settings.html">Settings</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Settings</h1>
+        <div class="settings-container">
+            <div class="theme-settings">
+                <h2>Theme</h2>
+                <button onclick="setTheme('light')">Light Theme</button>
+                <button onclick="setTheme('dark')">Dark Theme</button>
+            </div>
+            <div class="tab-cloak-settings">
+                <h2>Tab Cloak</h2>
+                <select id="tabCloakDropdown" onchange="setTabCloak(this.value)">
+                    <option value="">Select a Cloak</option>
+                    <option value="classroom">Classroom</option>
+                    <option value="drive">Drive</option>
+                </select>
+            </div>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
